@@ -23,6 +23,11 @@ HEADING
   margin: 0;
 }
 
+h1{
+  font-family: 'Changa One', sans-serif;
+  margin: 15px 0;
+  font-size: 1.75em;
+}
 
 
 /*****************
