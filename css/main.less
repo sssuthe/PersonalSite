@@ -1,4 +1,20 @@
 @footer-text-color: #ccc;
+@gallery-li-background-color: #f5f5f5;
+@gallery-li-text-color: #bdc3c7;
+
+@body-background-color: #fff;
+@body-text-color: #999;
+
+@header-background-color: #6ab47b;
+@header-border-color: #599a68;
+
+@header-text-color: #fff;
+
+@link-hover-color: #32673f;
+
+@phone-image: url('../img/phone.png');
+@mail-image: url('../img/mail.png');
+@twitter-image: url('../img/twitter.png');
 
 
 /**********************************
@@ -67,22 +83,26 @@ nav {
   text-align: center;
   padding: 10px 0;
   margin: 20px 0 0;
-}
 
-nav ul {
-    list-style: none;
-    margin: 0 10px;
-    padding: 0;
-}
-
-nav li {
-    display: inline-block;
-}
-
-nav a {
+    ul {
+        list-style: none;
+        margin: 0 10px;
+        padding: 0;
+    }
+    
+    li {
+        display: inline-block;
+    }
+    
+    a {
     font-weight: 800;
     padding: 15px 10px;
+    }
 }
+
+
+
+
 
 
 /**********************************
@@ -111,21 +131,22 @@ PAGE: Portfolio
     margin: 0;
     padding: 0;
     list-style: none;
-}
 
-#gallery li {
-    float: left;
-    width: 45%;
-    margin: 2.5%;
-    background-color: #f5f5f5;
-    color: #bdc3c7;
-}
 
-#gallery li a p {
-    margin: 0;
-    padding: 5%;
-    font-size: 0.75em;
-    color: #bdc3c7;
+    li {
+        float: left;
+        width: 45%;
+        margin: 2.5%;
+        background-color: @gallery-li-background-color;
+        color: @gallery-li-text-color;
+        
+        a p {
+            margin: 0;
+            padding: 5%;
+            font-size: 0.75em;
+            color: @gallery-li-text-color;
+        }
+    }
 }
 
 /**********************************
@@ -148,27 +169,26 @@ PAGE: CONTACT
     padding: 0;
     margin: 0;
     font-size: 0.9em;
-}
 
-.contact-info a {
-    display: block;
-    min-height: 20px;
-    background-repeat: no-repeat;
-    background-size: 20px 20px;
-    padding: 0 0 0 30px;
-    margin: 0 0 10px;
-}
+    a {
+        display: block;
+        min-height: 20px;
+        background-repeat: no-repeat;
+        background-size: 20px 20px;
+        padding: 0 0 0 30px;
+        margin: 0 0 10px;
+    }
+    li.phone a {
+        background-image: @phone-image;
+    }
 
-.contact-info li.phone a {
-    background-image: url('../img/phone.png');
-}
+    li.mail a {
+        background-image: @mail-image;
+    }
 
-.contact-info li.mail a {
-    background-image: url('../img/mail.png');
-}
-
-.contact-info li.twitter a {
-    background-image: url('../img/twitter.png');
+    li.twitter a {
+        background-image: @twitter-image;
+    }
 }
 
 /**********************************
@@ -177,39 +197,39 @@ COLORS
 
 /* site body */
 body {
-  background-color: #fff;
-  color: #999;
+  background-color: @body-background-color;
+  color: @body-text-color;
 }
 
 /* green header */
 header {
-  background: #6ab47b;
-  border-color: #599a68;
+  background: @header-background-color;
+  border-color: @header-border-color;
 }
 
 /* nav background on mobile */
 nav {
-  background: #599a68;
+  background: @header-border-color;
 }
 
 /* logo text */
 h1, h2 {
-  color: #fff;
+  color: @header-text-color;
 }
 
 /* links */
 a {
-  color: #6ab47b;
+  color: @header-background-color;
 }
 
 /* nav link */
 nav a, nav a:visited {
-  color: #fff;
+  color: @header-text-color;
 }
 
 /* selected nav link */
 nav a.selected, nav a:hover {
-  color: #32673f;
+  color: @link-hover-color;
 }
 
 
