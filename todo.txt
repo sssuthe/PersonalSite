@@ -6,4 +6,3 @@ Get flexblock in place
 Get react.js
 Get Jenkins going to be able to deploy this
 Move images to a database and pull that way
-Move CSS over to less
